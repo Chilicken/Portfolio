@@ -1,0 +1,452 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    height: fit-content;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    height: 5vh;
+    width: 100%;
+    z-index: 1;
+    font-family: "Roboto Condensed";
+    font-size: 1.2vw;
+    font-style: italic;
+
+}
+header a{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 100%;
+    margin: 0;
+}
+
+header ul li {
+    padding: 5px;
+    list-style: none;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+header ul li:hover  {
+  background-color: white;
+ 
+  transform: skew(-5deg);
+}
+header ul li:hover a{
+    color: black;
+}
+
+.introduction {
+    background: linear-gradient(16deg, rgba(0, 76, 76, 1) 0%, rgba(1, 152, 153, 1) 100%);
+    min-height: 100vh;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+
+}
+
+.introduction .container {
+    position: relative;
+    top: 10%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+    background: radial-gradient(rgb(255, 255, 255) 2px, transparent 2px);
+    background-size: 50px 50px;
+
+
+}
+
+
+
+
+
+@keyframes gravity {
+    0% {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+#Qui {
+    overflow: auto;
+}
+.introduction::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://img.freepik.com/free-photo/glitch-effect-black-background_53876-129025.jpg?w=2000&t=st=1672327728~exp=1672328328~hmac=9ea43c46fd40632dcba62f5cc252800bfd06e636e7a257708061ae3ea848177b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+.introduction img {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 80%;
+    object-fit: contain;
+    animation: gravity infinite 2s ease-in-out;
+}
+
+.introduction div:last-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9;
+}
+
+.introduction p {
+    padding: 5%;
+    text-indent: 5rem;
+    font-size: 1.5vw;
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    animation: slideright 3s cubic-bezier(0.19, 1, 0.22, 1);
+    color: white;
+}
+
+h1 {
+    margin-top: 2rem;
+    font-size: 3vw;
+    font-family: "Bebas Neue";
+    animation: slideright 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #FFAD01;
+}
+
+.gamepart {
+    height: 100vh;
+    position: relative;
+    background: radial-gradient(circle, rgba(10,95,53,1) 0%, rgba(6,38,23,1) 100%);
+}
+.gamepart::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://t3.ftcdn.net/jpg/01/74/36/84/360_F_174368439_GD4SXlELwGGiyhrFvDr3mxtLrOWWWpec.jpg);
+    mix-blend-mode: luminosity;
+    opacity: 40%;
+}
+
+.mouth {
+    width: 8vw;
+    height: 11.84vw;
+    background-color: rgb(0, 128, 128);
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+    z-index: 9;
+    font-family: "Bebas Neue";
+    font-size: 1vw;
+    border-radius: 10%;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+.mouth:hover {
+    filter: brightness(40%);
+}
+
+#mouth p {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    animation: gravity infinite 3s ease-in-out;
+}
+
+.hand {
+    margin: 0 auto;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 70%;
+    align-items: flex-end;
+}
+
+.hand::after {
+    content: " ";
+    background-color: cyan;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 9;
+    position: absolute;
+    bottom: -50%;
+    display: none;
+
+}
+
+.card {
+
+    width: 8vw;
+    height: 11.84vw;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: rotate 3.35s cubic-bezier(1, .01, .83, .67);
+
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hand .card:first-child {
+    rotate: -12.5deg;
+    animation: normal 3s cubic-bezier(0.165, 0.84, 0.44, 1) slideright, normal 0.25s ease-out cardun 3s;
+    transform-origin: bottom right;
+}
+
+
+.hand .card:nth-child(2) {
+    animation: normal 3s cubic-bezier(0.165, 0.84, 0.44, 1) slideright;
+
+}
+
+.hand .card:last-child {
+    rotate: 12.5deg;
+    animation: normal 3s cubic-bezier(0.165, 0.84, 0.44, 1) slideright, normal 0.25s ease-out cardtrois 3s;
+    transform-origin: bottom left;
+}
+
+
+
+
+@keyframes slideright {
+    from {
+        rotate: unset;
+        transform: translateX(-100vw);
+
+    }
+
+    to {
+        rotate: unset;
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes cardun {
+    0% {
+        rotate: unset;
+    }
+
+    100% {
+
+        rotate: -12.5deg;
+    }
+}
+
+@keyframes cardtrois {
+    from {
+        rotate: unset;
+    }
+
+    to {
+        rotate: 12.5deg;
+    }
+}
+
+.Portfolio {
+    /*background-image: url(https://static.vecteezy.com/ti/photos-gratuite/p2/4962071-texture-du-liege-gratuit-photo.jpg);*/
+    background-image: url(img/4962071-texture-du-liege-gratuit-.jpg);
+    padding: 1%;
+    overflow: visible;
+    position: relative;
+
+}
+.grid {
+    width: 75vw;
+    margin: 5vh auto 5vh auto;
+    overflow: visible;
+    height: auto;
+    columns: 3;
+    column-gap: 10px;
+    pointer-events: all;
+    cursor: pointer;
+
+
+}
+
+/* clear fix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+
+.grid-item {
+    /*width: 33.333%; */
+    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1;
+    margin-top: 10px;
+    background-color: rgba(192, 192, 192, 0.61);
+    font-family: 'Gochi Hand', cursive;
+}
+
+.grid-item h2 {
+    font-size: xx-large;
+}
+
+.grid-item p {
+    font-size: x-large;
+}
+
+.grid-item:hover, .grid-item:hover::after {
+    z-index: 9;
+    transform: scale(1.2);
+
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    height: 5vh;
+    width: 100%;
+}
+
+#popup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+    display: none;
+    color: rgb(57, 57, 57);
+    font-family: 'Gochi Hand', cursive;
+
+}
+
+#popup .overlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(16deg, rgba(0, 0, 0, 1) 0%, rgba(24, 24, 24, 1) 18%, rgba(255, 255, 255, 1) 100%);
+    mix-blend-mode: luminosity;
+    opacity: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#popup .polaroid {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    width: 34.41vw;
+    height: 39.6vw;
+    position: relative;
+    font-size: 1vw;
+    z-index: 99999999;
+}
+
+#popup span {
+    position: absolute;
+    cursor: pointer;
+    top: 0.5%;
+    right: 0.5%;
+    border-radius: 50%;
+    padding: 0.5%;
+    font-size: 1.5vw;
+
+}
+
+#popup span:hover {
+    color: black;
+}
+#popup a{
+    max-height: 78%;
+}
+#popup iframe {
+    width: 100%;
+}
+
+#popup img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+
+    width: 98%;
+    max-height: 100%    ;
+    object-position: top;
+}
+
+#popup h2 {
+    margin: 0;
+    color: rgb(38, 38, 38);
+    font-size: 1.5vw;
+}
+@media (max-width:1240px) {
+    #popup .polaroid{
+        width: 60vw;
+        height: 69vw;
+        font-size: 1.2vw;
+    }
+    
+}
+@media (max-width:1024px) {
+    .introduction {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width:1800px) {
+    .introduction {
+        padding: 1.5%;
+    }
+
+}

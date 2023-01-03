@@ -1,0 +1,27 @@
+Graphisme : affiche, photos
+Audio-Visuel : CV vidéo, interview, podcast, gif
+développement : portrait chinois, resaweb, dataviz
+
+-Ecrire les textes
+-Ajout d'une page de l'accueil avec présentation de ma personne
+-Design des cartes
+-Ajouts des yeux qui suivent le curseur.
+
+Parce que j'essaie toujours de voire le travail comme un jeu
+
+-Fenêtre modale avec description
+-Habillage du site avec un gif activable pour la bouche
+-caché la carte posée
+Une fonction d'ajout différentes pour l'audiovisuelle
+-Reactive rendre les cartes clickables en mode mobile 768px
+
+
+Vibes :
+http://yourfavoriteenemies.com/main/fr/un-polaroid-unique-pour-vous/
+https://www.google.com/search?q=writing+on+polaroid&tbm=isch&ved=2ahUKEwihupfFuZj8AhU6TKQEHUz5BI4Q2-cCegQIABAA&oq=writing+on+polaroid&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgYIABAIEB4yBwgAEIAEEBg6BAgAEEM6BggAEAUQHlCfB1i3I2CrJGgAcAB4AIABrQGIAfcDkgEEMTAuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=2S-qY-HpM7qYkdUPzPKT8Ag&bih=1333&biw=2560&hl=en-US#imgrc=Ez3aqOuhMtkR7M
+
+
+
+Trois = développement
+Deux = audiovisuelle
+Un = graphisme

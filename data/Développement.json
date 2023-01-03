@@ -1,0 +1,24 @@
+[
+    {
+        "Titre":"Portrait Chinois",
+        "Description":"Le portrait chinois est le premier véritable site web que j'ai développé en utilisant mes connaissances en HTML, CSS et Javascript. L'exercice visait à me présenter à travers des oeuvres ou des objets qui m'ont influencé. Le site est consultable en cliquant <a href='https://chilicken.github.io/portrait-chinois/'>ici</a>",
+        "Img":"img/Portraitchinois.jpg"
+    },
+    {
+        "Titre":"Resaweb",
+        "Description":"Ce site web permet de réserver des studios d'enregistrement fictif grâce à l'utilisation de php et d'une base de données. Découvrir le site<a href='https://www.resaweb.tranvanti.butmmi.o2switch.site/'>ici</a>",
+        "Img":"img/Resaweb.jpg"
+       
+    },
+    {
+        "Titre": "WordPress E-Seniors",
+        "Description": "Ce site wordpress a été réalisé dans le cadre d'une mise en situation de projet de communication pour un projet associatif. Pour ce projet j'ai réalisé un <a href='https://www.tranvanti.butmmi.o2switch.site/eseniors/'> site wordpress </a> ainsi qu'une affiche promotionnelle visible dans la partie graphisme.",
+        "Img": "img/ESeniors.JPG"
+    },
+
+    {
+        "Titre": "Dataviz",
+        "Description": "J'ai développé le système de visualisation de données en utilisant Javascripts et des sources en JSON. Le site est consultable en cliquant <a href='https://diaks17.github.io/Dataviz/index.html'>ici.</a> Ce site a été réalisé en tandem avec Moussa Diakite qui s'est chargé de l'habillage du site.",
+        "Img": "img/Dataviz.jpg"
+    }
+]
