@@ -299,7 +299,7 @@ h1 {
     margin: 5vh auto 5vh auto;
     overflow: visible;
     height: auto;
-    columns: 3;
+    columns: 2;
     column-gap: 10px;
     pointer-events: all;
     cursor: pointer;
